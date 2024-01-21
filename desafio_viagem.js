@@ -23,7 +23,7 @@ function calcular() {
         imagem.classList.add("minha-imagem");
         imagemDiv.appendChild(imagem);
 
-        res.innerHTML = pagoPorKM.toFixed(2);
+        res.innerHTML = `O custo gasto nessa viagem é de R$ ${pagoPorKM.toFixed(2)}`;
         
     }
 }
