@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro desafio de JS</title>
+
+    <script defer src="desafio_viagem.js"></script>
+    <link rel="stylesheet" href="estilos/desafio.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando o valor de uma viagem</h1>
+    </header>
+
+    <section class="tudo">
+        <div class="dados">
+            <p>
+                <label for="preco_combu">Qual o preço do combustível?</label> <br>
+                <input type="number" name="preco_combustivel" id="preco_combu">
+            </p>
+            <p>
+                <label for="gasto_combu">Quantos KM seu veículo faz por litro?</label> <br>
+                <input type="number" name="gasto_combustivel" id="gasto_combu">
+            </p>
+            <p>
+                <label for="km_dis">Qual a distância da viagem em KM?(Ida e volta)</label> <br>
+                <input type="number" name="distancia_km" id="km_dis">
+            </p>
+            <input type="submit" value="Evniar" onclick="calcular()">
+        </div>
+
+        <div id="res">
+
+        </div>
+        
+        <div id="foto">
+            
+        </div>
+
+    </section>
+</body>
+</html>
