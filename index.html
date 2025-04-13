@@ -1,43 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro desafio de JS</title>
-
-    <script defer src="desafio_viagem.js"></script>
-    <link rel="stylesheet" href="estilos/desafio.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Viagem</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Calculando o valor de uma viagem</h1>
-    </header>
+  <div class="container">
+    <h1>Calculadora de Gasto por Viagem</h1>
+    <form id="form">
+      <label for="preco">Preço do combustível (R$/L):</label>
+      <input type="number" id="preco" step="0.01" required />
 
-    <section class="tudo">
-        <div class="dados">
-            <p>
-                <label for="preco_combu">Qual o preço do combustível?</label> <br>
-                <input type="number" name="preco_combustivel" id="preco_combu">
-            </p>
-            <p>
-                <label for="gasto_combu">Quantos KM seu veículo faz por litro?</label> <br>
-                <input type="number" name="gasto_combustivel" id="gasto_combu">
-            </p>
-            <p>
-                <label for="km_dis">Qual a distância da viagem em KM?(Ida e volta)</label> <br>
-                <input type="number" name="distancia_km" id="km_dis">
-            </p>
-            <input type="submit" value="Evniar" onclick="calcular()">
-        </div>
+      <label for="consumo">Consumo do veículo (km/L):</label>
+      <input type="number" id="consumo" step="0.1" required />
 
-        <div id="res">
+      <label for="distancia">Distância da viagem (km):</label>
+      <input type="number" id="distancia" step="1" required />
 
-        </div>
-        
-        <div id="foto">
-            
-        </div>
-
-    </section>
+      <button type="submit">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
